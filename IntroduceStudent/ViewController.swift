@@ -47,10 +47,10 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "My Introduction", message: introduction, preferredStyle: .alert)
         
         // A way to dismiss the box once it pops up
-        //let alertAction = UIAlertAction(title: "Nice to meet you!", style: .default, handler: nil)
+        let alertAction = UIAlertAction(title: "Nice to meet you!", style: .default, handler: nil)
         
         // Passing this action to the alert controller so it can be dismissed
-        //alertController.addAction(alertAction)
+        alertController.addAction(alertAction)
         
         present(alertController, animated: true, completion: nil)
     }
