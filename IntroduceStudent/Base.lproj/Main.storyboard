@@ -51,6 +51,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More pets?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFk-q2-VH9">
+                                <rect key="frame" x="14" y="545" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="da7-tQ-j2q">
                                 <rect key="frame" x="14" y="422" width="352" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,17 +104,19 @@
                                 <rect key="frame" x="272" y="500" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More pets?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFk-q2-VH9">
-                                <rect key="frame" x="14" y="545" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="Ecb-ba-uzt" id="Vj0-dF-abd"/>
+                        <outlet property="lastNameTextField" destination="Ycw-Vu-pNp" id="vMw-Ca-nVm"/>
+                        <outlet property="morePetsStepper" destination="GeW-2p-thg" id="n3U-Cv-IbP"/>
+                        <outlet property="morePetsSwitch" destination="I1x-wF-MM4" id="H3Y-ER-i89"/>
+                        <outlet property="numberOfPetsLabel" destination="iNJ-4j-Z6D" id="tZa-gW-xkw"/>
+                        <outlet property="schoolNameTextField" destination="LqT-Wx-GdO" id="dij-h9-x4V"/>
+                        <outlet property="yearSegmentedControl" destination="da7-tQ-j2q" id="S4G-Iv-qtK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
